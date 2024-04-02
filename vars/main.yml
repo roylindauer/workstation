@@ -1,0 +1,40 @@
+---
+dotfiles_repo: "https://github.com/roylindauer/dotfiles.git"
+dotfiles_repo_version: main
+dotfiles_files:
+  - .zshrc
+  - .gitconfig
+  - .railsrc
+  - .aliases
+  - .vimrc
+  - rails-template.rb
+
+homebrew_cask_accept_external_apps: true
+homebrew_installed_packages:
+  - libyaml
+  - curl
+  - coreutils
+  - git
+  - git-crypt
+  - terraform
+  - wget
+  - zsh
+  - doctl
+  - go
+  - tflint
+  - asdf
+  - direnv
+
+homebrew_taps: []
+
+homebrew_cask_appdir: /Applications
+
+homebrew_cask_apps:
+  - iterm2
+  - slack
+  - visual-studio-code
+  - docker
+  - postman
+  - spotify
+  - notion
+  - discord

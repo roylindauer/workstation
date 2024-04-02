@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  name: Setup Workstation
+  user: roylindauer
+  connection: local
+
+  vars_files:
+    - vars/main.yml
+
+  roles:
+    - geerlingguy.dotfiles
+    - geerlingguy.mac.homebrew
+
+  tasks: []

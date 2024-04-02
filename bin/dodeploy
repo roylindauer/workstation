@@ -1,0 +1,29 @@
+#!/bin/bash
+
+function usage {
+    echo "Usage: "
+    echo "CIRCLE_BRANCH=branch CIRCLE_BUILD_NUM=1 ENC_KEY=<ENC_KEY> dodeploy <SERVICE>"
+}
+
+if [ -z "$1" ]; then
+    usage
+    exit 1;
+fi
+
+SERVICE=$1
+
+if [ -z "$ENC_KEY" ]; then
+    usage
+    exit 1;
+fi
+
+function main {    
+    pie \
+        buildsystem:ecr_login \
+        buildsystem:$SERVICE:build \
+        buildsystem:$SERVICE:tag \
+        buildsystem:$SERVICE:push \
+        buildsystem:$SERVICE:deploy
+}
+
+main

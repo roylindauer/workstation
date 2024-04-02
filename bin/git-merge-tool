@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+LOCAL=$1
+BASE=$2
+REMOTE=$3
+MERGED=$4
+
+if [ $DOTFILES_OS == 'darwin' ]; then
+  ksdiff --merge --output "$MERGED" --base "$BASE" -- "$LOCAL" --snapshot "$REMOTE" --snapshot
+fi
+
+if [ $DOTFILES_OS == 'linux' ]; then
+  meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+fi
