@@ -24,6 +24,7 @@ homebrew_installed_packages:
   - tflint
   - asdf
   - direnv
+  - ripgrep
 
 homebrew_taps: []
 
