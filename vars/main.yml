@@ -25,6 +25,7 @@ homebrew_installed_packages:
   - asdf
   - direnv
   - ripgrep
+  - neovim 
 
 homebrew_taps: []
 
