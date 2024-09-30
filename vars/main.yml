@@ -16,7 +16,7 @@ homebrew_installed_packages:
   - coreutils
   - git
   - git-crypt
-  - terraform
+  - opentofu
   - wget
   - zsh
   - doctl
@@ -25,7 +25,10 @@ homebrew_installed_packages:
   - asdf
   - direnv
   - ripgrep
+  - ast-grep
+  - luarocks
   - neovim 
+  - zellij
 
 homebrew_taps: []
 
@@ -34,10 +37,8 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - iterm2
   - slack
-  - vscodium
   - docker
   - postman
   - spotify
   - notion
   - discord
-  - warp
