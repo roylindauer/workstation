@@ -22,7 +22,6 @@ homebrew_installed_packages:
   - doctl
   - go
   - tflint
-  - asdf
   - direnv
   - ripgrep
   - ast-grep
