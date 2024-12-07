@@ -28,8 +28,10 @@ homebrew_installed_packages:
   - luarocks
   - neovim 
   - zellij
+  - woff2
 
-homebrew_taps: []
+homebrew_taps:
+  - jesseduffield/lazygit/lazygit
 
 homebrew_cask_appdir: /Applications
 
